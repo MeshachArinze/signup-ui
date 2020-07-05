@@ -21,8 +21,8 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: rgb(232,183,242);
-    background: linear-gradient(90deg, rgba(232,183,242,1) 0%, rgba(217,104,240,1) 100%);
+    background: rgb(78,7,92);
+    background: linear-gradient(90deg, rgba(78,7,92,1) 0%, rgba(96,12,112,1) 100%);
 }
 #signup-box {
     width: 100%;
@@ -69,7 +69,15 @@ body {
 }
 .avatar-title {
     font-size: 0.8rem;
-    color: rgb(235, 235, 68);
+}
+.tyler {
+    color: rgb(221, 207, 6);
+}
+.sarah {
+    color: rgb(233, 223, 89);
+}
+.john {
+    color: rgb(146, 229, 250);
 }
 .avatarHolder {
     width: 100%;
@@ -127,12 +135,17 @@ body {
     width: 100%;
     padding: 15px;
     border-radius: 50px;
-    background: rgb(255,0,0);
     border: none;
     font-size: 1rem;
+    background: rgb(255,0,0);
     background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 100%);
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: border-radius 0.8s ease-in-out;
+}
+.my-form-control button:hover {
+     border-radius: 10px;
 }
 #login-user {
     font-style: italic;
@@ -140,4 +153,23 @@ body {
 }
 #login-user span {
     color: rgb(252, 108, 56);
+}
+@media screen and (min-width: 600px) {
+    #mycontainer {
+        background: rgb(232,183,242);
+        background: linear-gradient(90deg, rgba(232,183,242,1) 0%, rgba(217,104,240,1) 100%);
+    }
+    #signup-box {
+        width: 60vw;
+        padding-top: 50px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+}
+@media screen and (min-width: 800px) {
+    
+    #signup-box {
+        width: 40vw;
+        padding-top: 50px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
 }
