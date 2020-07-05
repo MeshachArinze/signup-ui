@@ -1,0 +1,143 @@
+html {
+  scroll-behavior: smooth;
+}
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#mycontainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(232,183,242);
+    background: linear-gradient(90deg, rgba(232,183,242,1) 0%, rgba(217,104,240,1) 100%);
+}
+#signup-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgb(78,7,92);
+    background: linear-gradient(90deg, rgba(78,7,92,1) 0%, rgba(96,12,112,1) 100%);
+}
+#signup-box h2 {
+    color: white;
+}
+/* a (P tag) that is direct decendant of  #signup-box is styled
+*  read about line height
+*/
+#signup-box > p {
+    line-height: 4rem;
+}
+/* a (P tag) that is direct decendant of  #signup-box  which is first child
+*  read about line height
+*/
+#signup-box > p:first-of-type {
+    color:  rgb(182, 137, 190);
+}
+#signup-box > p:first-of-type,
+.avatar-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#avatars {
+     display: grid;
+     grid-template-columns: repeat(3, 20%);
+     justify-content: center;
+     align-items: center;
+     grid-gap: 30px;
+}
+.avatar-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avatar-title {
+    font-size: 0.8rem;
+    color: rgb(235, 235, 68);
+}
+.avatarHolder {
+    width: 100%;
+    overflow: hidden;
+}
+.avatarHolder img {
+    width: 100%;
+}
+#myform {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.my-form-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 6px;
+}
+.outline-div {
+    border: 1px solid rgb(182, 137, 190);
+}
+.icons,
+.my-form-group input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons {
+    padding: 10px 20px 10px 20px;
+}
+.my-form-group input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.icons,
+.my-form-group input,
+.my-form-group input::placeholder {
+     color: rgb(182, 137, 190);
+}
+.my-form-control {
+    width: 100%;
+    margin: 30px;
+}
+.my-form-control button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    background: rgb(255,0,0);
+    border: none;
+    font-size: 1rem;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 100%);
+    color: white;
+    text-transform: uppercase;
+}
+#login-user {
+    font-style: italic;
+    color: white;
+}
+#login-user span {
+    color: rgb(252, 108, 56);
+}
